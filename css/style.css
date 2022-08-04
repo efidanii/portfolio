@@ -5,6 +5,7 @@ body{
     height: 100%;
     background: #222020;
     color: white;
+    min-width: 800px;
 }
 .preview, .skills, .works, .aboutMe, .contacts{
     min-height: 100vh;
@@ -21,10 +22,13 @@ body{
 .preview__top{
     position: fixed;
     width: 100%;
+    background: rgba(92,161,114,0.6);
+    z-index: 1;
 }
 .preview__top-container{
     max-width: 1200px;
     margin: 0 auto;
+    z-index: 2;
 }
 
 
@@ -33,33 +37,40 @@ body{
     margin: 0;
     padding-left: 0;
 }
-
-.preview__top-menu ul li{
+.preview__top-menu ul a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.preview__top-menu ul a{
     display: inline-block;
     padding: 20px;
+    color: white;
 }
-
-.preview__top-menu ul li:first-child{
-    display: inline-block;
+.preview__top-menu .active{
+    color: #5ca272;
+}
+.preview__top-menu ul a:first-child{
     padding: 20px 20px 20px 0px;
 }
 
-
+.preview__body-left-container h2{
+    display: flex;
+}
 
 
 
 .priview__body{
     display: flex;
-    position: relative;
     justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    position: relative;
 }
 .preview__body-left{
     width: 50%;
     position: relative;
 }
-.preview__body-left-container{
 
-}
 .preview__body-right{
     width: 30%;
     position: relative;
@@ -67,6 +78,70 @@ body{
 }
 
 .preview__body-right img{
-    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.preview__body-left-container h1 {
+    font-size: 3.8em;
+}.myName{
+    color: #5ca272 !important;
+    padding-left: 20px;
+}
+
+.skills-container{
+    width: 1200px;
     margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.skills__title{
+    text-align: center;
+    font-size: 3.5em;
+    margin-bottom: 100px;
+}
+
+.skills__block{
+    width: 34%;
+    position: relative;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.skills__block-name{
+    font-size: 1.5em;
+    color: #5ca272;
+    margin-bottom: 5px;
+}
+.skills__block-about ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.skills__block-progress{
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+    background: #e4d7c0;
+    border-radius: 14px;
+    position: relative;
+}
+.progress__number{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.skills_block-progress-fill{
+    height: 20px;
+    background: #5ca272;
+    border-radius: 14px;
 }

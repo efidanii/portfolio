@@ -13,31 +13,31 @@
         <div class="preview__top-container">
             <div class="preview__top-menu">
                 <ul>
-                    <li>Главная</li>
-                    <li>Мои Скиллы</li>
-                    <li>Мои Работы</li>
-                    <li>Обо Мне</li>
-                    <li>Контакты</li>
+                    <a href="google.com" class="active"><li>Главная</li></a>
+                    <a href="google.com"><li>Мои Скиллы</li></a>
+                    <a href="google.com"><li>Мои Работы</li></a>
+                    <a href="google.com"><li>Обо Мне</li></a>
+                    <a href="google.com"><li>Контакты</li></a>
                 </ul>
             </div>
         </div>
 
     </div>
-    
+
     <div class="preview">
     <div class="preview-container">
         <div class="priview__body">
             <div class="preview__body-left">
                 <div class="preview__body-left-container">
-                    <h2>Привет! Меня зовут</h2>
+                    <h2>Привет! <div class="myName"></div>Меня зовут</h2>
                     <h1>Даниил Ефименко</h1> и я начинающий веб разработчик!
                 В данный момент ищу работу на должность верстальщика.
                 Предлагаю вам посмотреть данную страницу и познакомиться со мной поближе!
            
                 </div>
                  </div>
-            <div class="preview__body-right">
-                <img src="img/ava.jpg" alt="ava">
+            <div class="preview__body-right">  
+                <img src="img/ava.png" alt="">
             </div>
         </div>
     </div>
@@ -46,7 +46,9 @@
 
 
     <div class="skills">
-        <div class="skills__title">Вот что я умею, и чему сейчас обучаюсь</div>
+        
+        <div class="skills__title">Вот что я умею<br> и чему сейчас обучаюсь</div>
+    <div class="skills-container">
         <div class="skills__block">
             <div class="skills__block-name">HTML</div>
             <div class="skills__block-about">
@@ -57,7 +59,10 @@
                     <li>Умею работать с SVG</li>
                 </ul>
             </div>
-            <div class="skills__block-progress">85%</div>
+            <div class="skills__block-progress">
+                <div class="skills_block-progress-fill" id="progress" value="85">
+                <div class="progress__number">85%</div></div>
+            </div>
         </div>
 
         <div class="skills__block">
@@ -67,9 +72,13 @@
                     <li>Владею препроцессором SASS</li>
                     <li>Умею пользоваться Flex Box</li>
                     <li>Так же знаю Grid Layout</li>
+                    <li>Умею делать простую анимацию</li>
                 </ul>
             </div>
-            <div class="skills__block-progress">85%</div>
+            <div class="skills__block-progress">
+                <div class="skills_block-progress-fill" id="progress" value="70">
+                <div class="progress__number">70%</div></div>
+            </div>
         </div>
 
         <div class="skills__block">
@@ -81,7 +90,10 @@
                     <li>В скором времени переду на изучение React</li>
                 </ul>
             </div>
-            <div class="skills__block-progress">85%</div>
+            <div class="skills__block-progress">
+                <div class="skills_block-progress-fill" id="progress" value="21">
+                <div class="progress__number">21%</div></div>
+            </div>
         </div>
 
         <div class="skills__block">
@@ -93,8 +105,12 @@
                     <li>Умею пользоваться Git</li>
                 </ul>
             </div>
-            <div class="skills__block-progress">85%</div>
+            <div class="skills__block-progress">
+                <div class="skills_block-progress-fill" id="progress" value="93">
+                <div class="progress__number">93%</div></div>
+            </div>
         </div>
+    </div>
     </div>
 
     <!-- <div class="works">
@@ -115,5 +131,6 @@
     <div class="contacts">
         Вот мой номер, жду звонка!
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
